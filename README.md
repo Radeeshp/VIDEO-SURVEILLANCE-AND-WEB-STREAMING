@@ -7,12 +7,20 @@ To detect motion through a live camera feed and stream the live feed to a websit
 ## Description:
 A project in python using open cv to detect motion in a camera feed and stream it to a website.
 
-##Project Structure:
+## Project Structure:
   templates
     -index.html
   _init_.py
   singlemotiondetector.py
   webstreaming.py
-##Theory:
-
-###Single
+### singlemotiondetector.py:
+#### Theory:
+  A class SingleMotionDetector has been defined with the functions update and detect
+  class has the objects accumWeight and bg.
+  ##### detect(self,image,tVal=25):
+  This function is used to detect motion.The paremeters image and tVal are passed  
+  # What is tVal
+  First the absolute difference between the background image and current image is obtained and stored, now this image is then threshold the stored image 
+  Perform s series of erosions and dilations to remove all noise 
+  
+   
