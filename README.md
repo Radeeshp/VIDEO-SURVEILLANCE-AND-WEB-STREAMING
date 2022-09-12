@@ -9,10 +9,15 @@ A project in python using open cv to detect motion in a camera feed and stream i
 
 ## Project Structure:
   templates
-    -index.html
+    
+    --index.html
+  
   _init_.py
+  
   singlemotiondetector.py
+  
   webstreaming.py
+  
 ### singlemotiondetector.py:
 #### Theory:
   A class SingleMotionDetector has been defined with the functions update and detect
