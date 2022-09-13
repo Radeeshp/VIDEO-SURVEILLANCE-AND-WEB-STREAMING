@@ -18,7 +18,7 @@ A project in python using open cv to detect motion in a camera feed and stream i
   
   webstreaming.py
   
-### singlemotiondetector.py:
+## singlemotiondetector.py:
  #### Theory:
    A class SingleMotionDetector has been defined with the functions update and detect
    class has the objects accumWeight and bg.
@@ -37,5 +37,5 @@ A project in python using open cv to detect motion in a camera feed and stream i
   
    #### Activity Diagram:
    ![Detect](https://user-images.githubusercontent.com/82216452/189920778-e5bc99f3-ad9d-40f4-b910-817d1b4d827c.jpeg)
-###   webstreaming.py:
+##   webstreaming.py:
   
