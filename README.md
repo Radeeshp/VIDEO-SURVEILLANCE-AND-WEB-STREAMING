@@ -23,9 +23,9 @@ A project in python using open cv to detect motion in a camera feed and stream i
   A class SingleMotionDetector has been defined with the functions update and detect
   class has the objects accumWeight and bg.
   ##### detect(self,image,tVal=25):
-  This function is used to detect motion.The paremeters image and tVal are passed  
+  This function is used to detect motion.The paremeters  image and tVal are passed.  
+  
   # What is tVal
-  First the absolute difference between the background image and current image is obtained and stored, now this image is then threshold the stored image 
-  Perform s series of erosions and dilations to remove all noise 
+  First the absolute difference between the background image and current image is obtained and stored, then threshold the image , perform erosion and dilation . Then the countours in the image are detected and we find the biggest countour and send return it.  
   
    
