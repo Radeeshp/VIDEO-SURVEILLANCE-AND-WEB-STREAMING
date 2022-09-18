@@ -1,7 +1,7 @@
 # VIDEO SURVEILLANCE AND WEB STREAMING
     Motion is detected through a camera and it's streamed to a website 
 
-##AIM
+## AIM
 
     To detect motion through a live camera feed and stream the live feed to a website.
 
@@ -100,6 +100,35 @@
      -import imutils
      -import time
      -import cv2 
+  ### Functions Used:
+     -index()
+     -detect_motion(frameCount)
+     -generate()
+     -video_feed()
+     
+     
+  ### Working:
+  
+     We Get the inputs from the user and call the required functions 
+     
+  ### Activity Diagram:
+  ![Screenshot 2022-09-18 161106](https://user-images.githubusercontent.com/82216452/190898020-bc1c04a0-bf2a-4fd4-a47d-acf0f604dfe4.png)
+  
+  ### detect_motion:
+    Motion is detected using this function.
+   Built In Functions Used:
+    
+    -read()
+    -imutils.resize()
+    -cv2.cvtColor()
+    -cv2.GaussianBlur()
+    -datetime.datetime.now()
+    -cv2.putText()
+    -cv2.rectangle()
+    -copy()
+
+   Activity Diagram: 
+ ![Screenshot 2022-09-18 161106](https://user-images.githubusercontent.com/82216452/190898909-ca8cbf74-88e7-44d5-b83b-a019c42fef09.png)
     
     
     
