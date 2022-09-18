@@ -49,7 +49,7 @@
         
    Activity Diagram:
    
-![Screenshot 2022-09-18 110446](https://user-images.githubusercontent.com/82216452/190896846-4df0aab3-131e-45da-839e-84bcd9ea8160.png)  
+![Screenshot 2022-09-18 165910](https://user-images.githubusercontent.com/82216452/190899833-6af7893d-e07d-48dd-982b-808554a72930.png)  
       
   
  ### detect(self,image,tVal=25):
@@ -128,7 +128,9 @@
     -copy()
 
    Activity Diagram: 
- ![Screenshot 2022-09-18 161106](https://user-images.githubusercontent.com/82216452/190898909-ca8cbf74-88e7-44d5-b83b-a019c42fef09.png)
+
+![Screenshot 2022-09-18 165531](https://user-images.githubusercontent.com/82216452/190899707-7558a73a-dce5-4765-bf94-82797495d73c.png)
+
     
     
     
