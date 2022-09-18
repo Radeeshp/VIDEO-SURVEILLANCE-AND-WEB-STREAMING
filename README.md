@@ -1,34 +1,40 @@
 # VIDEO SURVEILLANCE AND WEB STREAMING
-Motion is detected through a camera and it's streamed to a website 
+    Motion is detected through a camera and it's streamed to a website 
 
 ##AIM
-To detect motion through a live camera feed and stream the live feed to a website.
+
+    To detect motion through a live camera feed and stream the live feed to a website.
 
 ## Description:
-A project in python using open cv to detect motion in a camera feed and stream it to a website.
+
+    A project in python using open cv to detect motion in a camera feed and stream it to a website.
 
 ## Project Structure:
-  templates
+
+    templates
     
-    --index.html
+      --index.html
   
-  _init_.py
+    _init_.py
   
-  singlemotiondetector.py
+    singlemotiondetector.py
   
-  webstreaming.py
+    webstreaming.py
   
 ## singlemotiondetector.py:
  ### Theory:
-   A class SingleMotionDetector has been defined with the functions update and detect
+    A class SingleMotionDetector has been defined with the functions update and detect
   
-   class has the objects accumWeight and bg.
+    class has the objects accumWeight and bg.
  ### Imports Used :
       -import numpy as np
     
       -import imutils
     
       -import cv2
+ ### Functions Used:
+      -update(self,image)
+      -detect(self,image,tVal=25)
  ### update(self,image):
    Theory:
    
@@ -51,9 +57,11 @@ A project in python using open cv to detect motion in a camera feed and stream i
         
          This function is used to detect motion.The paremeters  image and tVal are passed.  
    
-         First the absolute difference between the background image and current image is obtained and stored, then threshold the image 
-  
-         , perform erosion and dilation . Then the countours in the image are detected and we find the biggest countour and send return it.  
+         First the absolute difference between the background image and current image is obtained and 
+         
+         stored, then threshold the image, perform erosion and dilation . Then the countours in the 
+         
+         image are detected and we find the biggest countour and send return it.  
    
    Built In Functions Used :
         
@@ -74,8 +82,54 @@ A project in python using open cv to detect motion in a camera feed and stream i
 
 
 ##   webstreaming.py:
-  ####Theory:
+  ### Theory:
+    
     We starting processing the live stream or video and detect motion in it.And then mark this motion and stream it to a website.
+    
     The Flask application is used t stream to the website as its light weight, and a common web framework.
+    
+  ### Imports Used:
+     -from singlemotiondetector import SingleMotionDetector
+     -from imutils.video import VideoStream
+     -from flask import Response
+     -from flask import Flask
+     -from flask import render_template
+     -import threading
+     -import argparse
+     -import datetime
+     -import imutils
+     -import time
+     -import cv2 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
