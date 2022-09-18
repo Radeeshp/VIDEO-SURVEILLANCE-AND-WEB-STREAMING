@@ -78,7 +78,7 @@
    
    Activity Diagram:
    
-![Screenshot 2022-09-18 154446](https://user-images.githubusercontent.com/82216452/190897126-fcb86741-ed29-4d1b-9a80-2d79a31f8c60.png)
+![Screenshot 2022-09-18 163825](https://user-images.githubusercontent.com/82216452/190899051-4a17fe47-b760-40aa-8134-7b9eb26cffb7.png)
 
 
 ##   webstreaming.py:
@@ -114,7 +114,7 @@
   ### Activity Diagram:
   ![Screenshot 2022-09-18 161106](https://user-images.githubusercontent.com/82216452/190898020-bc1c04a0-bf2a-4fd4-a47d-acf0f604dfe4.png)
   
-  ### detect_motion:
+  ### detect_motion():
     Motion is detected using this function.
    Built In Functions Used:
     
