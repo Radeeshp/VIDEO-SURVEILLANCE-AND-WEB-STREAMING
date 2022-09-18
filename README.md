@@ -19,17 +19,17 @@ A project in python using open cv to detect motion in a camera feed and stream i
   webstreaming.py
   
 ## singlemotiondetector.py:
- #### Theory:
+ ### Theory:
    A class SingleMotionDetector has been defined with the functions update and detect
   
    class has the objects accumWeight and bg.
- #### Imports Used :
+ ### Imports Used :
       -import numpy as np
     
       -import imutils
     
       -import cv2
- #### update(self,image):
+ ### update(self,image):
    Theory:
    
         This function is used to update the background image that is too be compared with the current image to detect 
@@ -40,23 +40,37 @@ A project in python using open cv to detect motion in a camera feed and stream i
          
         -cv2.accumulateWeighted()
         
-        Refer:
-      
-          https://www.geeksforgeeks.org/background-subtraction-in-an-image-using-concept-of-running-average/
-  
+        
    Activity Diagram:
+   
 ![Screenshot 2022-09-18 110446](https://user-images.githubusercontent.com/82216452/190896846-4df0aab3-131e-45da-839e-84bcd9ea8160.png)  
       
   
-   #### detect(self,image,tVal=25):
-   This function is used to detect motion.The paremeters  image and tVal are passed.  
+ ### detect(self,image,tVal=25):
+   Theory:
+        
+         This function is used to detect motion.The paremeters  image and tVal are passed.  
    
-   First the absolute difference between the background image and current image is obtained and stored, then threshold the image 
+         First the absolute difference between the background image and current image is obtained and stored, then threshold the image 
   
-   , perform erosion and dilation . Then the countours in the image are detected and we find the biggest countour and send return it.  
-  
-   #### Activity Diagram:
-   ![Screenshot 2022-09-18 110446](https://user-images.githubusercontent.com/82216452/190896521-55123769-830b-4fb6-988b-9786246b1d69.png)
+         , perform erosion and dilation . Then the countours in the image are detected and we find the biggest countour and send return it.  
+   
+   Built In Functions Used :
+        
+        -cv2.absdiff()
+        -cv2.threshold()
+        -cv2.erode()
+        -cv2.dilate()
+        -cv2.findContours()
+        -cv2.boundingRect()
+        -min()
+        -max()
+        -imutils.grab_contours()
+   
+   
+   Activity Diagram:
+   
+![Screenshot 2022-09-18 154446](https://user-images.githubusercontent.com/82216452/190897126-fcb86741-ed29-4d1b-9a80-2d79a31f8c60.png)
 
 
 ##   webstreaming.py:
