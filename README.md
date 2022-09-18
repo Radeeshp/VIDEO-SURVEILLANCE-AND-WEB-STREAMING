@@ -30,12 +30,13 @@ A project in python using open cv to detect motion in a camera feed and stream i
     
       -import cv2
  #### update(self,image):
-      Theory:
+   Theory:
+   
         This function is used to update the background image that is too be compared with the current image to detect 
         
         motion in the detect() function
       
-      Built In Functions Used :
+   Built In Functions Used :
          
         -cv2.accumulateWeighted()
         
@@ -43,9 +44,11 @@ A project in python using open cv to detect motion in a camera feed and stream i
       
           https://www.geeksforgeeks.org/background-subtraction-in-an-image-using-concept-of-running-average/
   
-        
+   Activity Diagram:
+![Screenshot 2022-09-18 110446](https://user-images.githubusercontent.com/82216452/190896846-4df0aab3-131e-45da-839e-84bcd9ea8160.png)  
+      
   
-   ##### detect(self,image,tVal=25):
+   #### detect(self,image,tVal=25):
    This function is used to detect motion.The paremeters  image and tVal are passed.  
    
    First the absolute difference between the background image and current image is obtained and stored, then threshold the image 
@@ -53,7 +56,7 @@ A project in python using open cv to detect motion in a camera feed and stream i
    , perform erosion and dilation . Then the countours in the image are detected and we find the biggest countour and send return it.  
   
    #### Activity Diagram:
-   ![Detect](https://user-images.githubusercontent.com/82216452/189920778-e5bc99f3-ad9d-40f4-b910-817d1b4d827c.jpeg)
+   ![Screenshot 2022-09-18 110446](https://user-images.githubusercontent.com/82216452/190896521-55123769-830b-4fb6-988b-9786246b1d69.png)
 
 
 ##   webstreaming.py:
