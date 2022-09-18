@@ -21,19 +21,29 @@ A project in python using open cv to detect motion in a camera feed and stream i
 ## singlemotiondetector.py:
  #### Theory:
    A class SingleMotionDetector has been defined with the functions update and detect
+  
    class has the objects accumWeight and bg.
-   ####Imports Used :
+ #### Imports Used :
       -import numpy as np
     
       -import imutils
     
       -import cv2
-   #### 
-   #### update(self,image):
+ #### update(self,image):
+      Theory:
+        This function is used to update the background image that is too be compared with the current image to detect 
+        
+        motion in the detect() function
+      
+      Built In Functions Used :
+         
+        -cv2.accumulateWeighted()
+        
+        Refer:
+      
+          https://www.geeksforgeeks.org/background-subtraction-in-an-image-using-concept-of-running-average/
   
-  
-  
-  
+        
   
    ##### detect(self,image,tVal=25):
    This function is used to detect motion.The paremeters  image and tVal are passed.  
