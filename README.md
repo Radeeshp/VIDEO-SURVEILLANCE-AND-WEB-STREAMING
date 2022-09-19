@@ -133,16 +133,30 @@
 
 ### generate():
 
-    This function is used to convert the image frames in byte format 
+   This function is used to convert the image frames in byte format 
     
-    Built In Functions Used :
+   Built In Functions Used :
         -cv2.imencode()
      
-    Activity Diagram:
+   Activity Diagram:
 ![Screenshot 2022-09-19 165927](https://user-images.githubusercontent.com/82216452/191007844-77807413-0004-442e-8c0f-9fa5b0051831.png)
 
-    
-    
+### videofeed():
+   
+   Returns the response generated along with the specific media  type (mime type)
+### index():
+   Returns the rendered template
+## Steps To Run The Code :
+    -Download and extract the zip file from Git.
+    -Install python,OpenCv,Flask,numpy,imutils.
+    -Ensure you have a working camera connected to your pc 
+    -Open the webstreaming.py in a integrated terminal or open command prompt from that location
+    -Run the program in command line or terminal and give the required inputs
+## References:
+    -https://www.geeksforgeeks.org/
+    -https://opencv.org/
+    -https://pyimagesearch.com/
+    -https://www.google.co.in/
     
     
     
