@@ -131,7 +131,16 @@
 
 ![Screenshot 2022-09-18 165531](https://user-images.githubusercontent.com/82216452/190899707-7558a73a-dce5-4765-bf94-82797495d73c.png)
 
+### generate():
+
+    This function is used to convert the image frames in byte format 
     
+    Built In Functions Used :
+        -cv2.imencode()
+     
+    Activity Diagram:
+![Screenshot 2022-09-19 165927](https://user-images.githubusercontent.com/82216452/191007844-77807413-0004-442e-8c0f-9fa5b0051831.png)
+
     
     
     
